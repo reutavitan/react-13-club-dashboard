@@ -2,7 +2,15 @@
 // Renders a <footer> with the text: © 2025 Campus Coding Club
 import styles from './Footer.module.css'
 
-export default function Footer() {
-  // TODO
-  return null
+
+
+function Footer() {
+  return (
+    <footer className={styles.footer}>
+        © 2025 Campus Coding Club
+    </footer>
+  );
 }
+
+export default Footer;
+

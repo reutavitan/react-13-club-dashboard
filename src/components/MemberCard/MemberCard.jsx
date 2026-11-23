@@ -12,5 +12,26 @@ export default function MemberCard({ member, isSelected, onSelect }) {
   // TODO: name + role badge
   // TODO: button colored by role (Leader=blue, Member=green, Guest=purple), disabled if inactive
   // TODO: inactive member -> the card also gets styles.inactive (faded)
-  return null
+  return (
+    <div
+      className={`${styles.card} ${!member.isActive ? styles.inactive : ""} ${isSelected ? styles.selected : ""}`}
+      onClick={() => onSelect(member.id)}
+    >
+      <div className={styles.avatar}>
+        {member.name.split(" ").map(word => word[0]).join("").toUpperCase()}
+      </div>
+      <div>
+        <div className={styles.name}>
+          {member.name}
+        </div>
+
+        <span className={styles.badge}>
+          {member.role}
+        </span>
+      </div>
+      <button className={`${styles.roleButton} ${styles[member.role.toLowerCase()]}`} disabled={!member.isActive}>
+        Contact
+      </button>
+    </div>
+  )
 }

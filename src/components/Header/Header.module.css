@@ -4,8 +4,18 @@
 
 /* the <header> wrapper */
 .header {
+     text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
 }
 
 /* the <h1> - big, centered, bold */
 .title {
+   color: #0b0130;
+  font-size: 32px;
+  margin: 0;
+  font-size: x-large;
+   font-weight: bold;
+   
 }

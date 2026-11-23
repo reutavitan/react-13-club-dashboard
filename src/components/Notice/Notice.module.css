@@ -4,12 +4,19 @@
 
 /* REQUIRED BY THE TESTS: the box */
 .notice {
+   padding: 12px 16px;
+  border-radius: 12px;
+  margin: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
 
+
 /* REQUIRED BY THE TESTS: yellow background */
-.warning {
+.warning {background-color: #FFF4CC;
 }
 
 /* REQUIRED BY THE TESTS: blue background */
-.info {
+.info {background-color: #F0E6FF;
 }
